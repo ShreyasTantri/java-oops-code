@@ -8,13 +8,16 @@ public class Animal {
         this.size = size;
         this.weight = weight;
     }
-    @override
+    public Animal(){
+
+    }
+    @Override
     public String toString(){
         return "Animal{" +
-                "type=" + type + '\' ' +
-                ", size=" + size + '\' ' +
+                "type=" + type + '\'' +
+                ", size=" + size + '\'' +
                 ", weight=" + weight +
-                ' } ' ;
+                '}' ;
     }
     public void move(String speed){
         System.out.println(type + " moves " + speed);
